@@ -1,0 +1,31 @@
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.MenuButton?>
+<?import javafx.scene.control.MenuItem?>
+<VBox fx:controller="com.example.demo_yana.HelloController"
+      xmlns:fx="http://javafx.com/fxml">
+    <ComboBox fx:id="tableChoice" />
+    <Button text="Show Table" onAction="#showTable" />
+    <Button fx:id="addButton" text="Добавить запись" onAction="#addRecord" />
+    <Button fx:id="deleteButton" text="Удалить выбранную запись" onAction="#deleteRecord" />
+    <Button fx:id="updateButton" text="Обновить выбранную запись" onAction="#updateRecord" />
+    <Button fx:id="actionsButton" text="Действия" />
+    <TableView fx:id="tableView" />
+
+
+    <MenuButton text="Actions">
+        <items>
+            <MenuItem text="Generate Tax Receipt" onAction="#getTyristByCategory"/>
+            <MenuItem text="Theft Statistics" onAction="#getTyristInfoByCategory"/>
+            <MenuItem text="Theft Statistics" onAction="#getLoadDataByDate"/>
+            <MenuItem text="Theft Statistics" onAction="#getTotalTouristsWithExcursions"/>
+            <MenuItem text="Theft Statistics" onAction="#getTotalTouristsByDateRange"/>
+            <MenuItem text="Theft Statistics" onAction="#getTouristInformation"/>
+            <MenuItem text="Theft Statistics" onAction="#showExcursionAndAgencyStats"/>
+            <MenuItem text="Theft Statistics" onAction="#getTouristInfoByFlightId"/>
+            <MenuItem text="Theft Statistics" onAction="#displayShopTouristPercentage"/>
+        </items>
+    </MenuButton>
+</VBox>

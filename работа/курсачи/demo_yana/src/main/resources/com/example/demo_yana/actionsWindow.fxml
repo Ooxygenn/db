@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox alignment="TOP_RIGHT" spacing="10" xmlns="http://javafx.com/javafx"
+      xmlns:fx="http://javafx.com/fxml"
+      fx:controller="com.example.demo_yana.ActionsWindowController">
+
+    <Button text="Получить перечень и общее число организаций" onAction="#getOrganizations"/>
+    <Button text="Получить сведения о владельце автотранспортного средства" onAction="#getOwnerInfo"/>
+    <Button text="Получить досье на автомобиль" onAction="#getCarDossier"/>
+    <Button text="Получить перечень и общее число владельцев машин без техосмотра" onAction="#getOwnersWithoutInspection"/>
+    <Button text="Получить статистику по типу ДТП за указанный период" onAction="#getAccidentStatistics"/>
+    <Button text="Получить результаты анализа ДТП" onAction="#getAccidentAnalysis"/>
+    <Button text="Получить данные о количестве ДТП с нетрезвыми водителями" onAction="#getAccidentsWithDrunkDrivers"/>
+    <Button text="Получить список машин, отданных в розыск" onAction="#getMissingCars"/>
+    <Button text="Получить данные об эффективности розыскной работы" onAction="#getSearchEfficiency"/>
+    <Button text="Получить перечень и общее число угонов за указанный период" onAction="#getCarThefts"/>
+    <Button text="Получить статистику по угонам" onAction="#getTheftStatistics"/>
+
+</VBox>
